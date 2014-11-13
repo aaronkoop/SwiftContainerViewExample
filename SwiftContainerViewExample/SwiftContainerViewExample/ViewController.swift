@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    private weak var topViewController: TopViewController?
+    private weak var bottomViewController: BottomViewController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
