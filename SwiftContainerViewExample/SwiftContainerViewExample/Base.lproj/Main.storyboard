@@ -108,7 +108,41 @@
                     </layoutGuides>
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Hlh-kt-G2Z">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="nxF-JK-0Br">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lcr-1k-hjg" firstAttribute="top" secondItem="nxF-JK-0Br" secondAttribute="bottom" id="4Ai-DH-CFU"/>
+                            <constraint firstItem="nxF-JK-0Br" firstAttribute="leading" secondItem="Hlh-kt-G2Z" secondAttribute="leadingMargin" constant="-16" id="8Iv-xa-B5D"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nxF-JK-0Br" secondAttribute="trailing" constant="-16" id="FVf-Ao-nA5"/>
+                            <constraint firstItem="nxF-JK-0Br" firstAttribute="top" secondItem="a0R-K2-bMz" secondAttribute="bottom" id="RuX-c9-QbS"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="nxF-JK-0Br"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="8Iv-xa-B5D"/>
+                                <exclude reference="FVf-Ao-nA5"/>
+                                <exclude reference="RuX-c9-QbS"/>
+                                <exclude reference="4Ai-DH-CFU"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="nxF-JK-0Br"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="8Iv-xa-B5D"/>
+                                <include reference="FVf-Ao-nA5"/>
+                                <include reference="RuX-c9-QbS"/>
+                                <include reference="4Ai-DH-CFU"/>
+                            </mask>
+                        </variation>
                     </view>
                     <toolbarItems/>
                 </viewController>
