@@ -164,10 +164,10 @@
             </objects>
             <point key="canvasLocation" x="1522.5" y="92.625"/>
         </scene>
-        <!--View Controller-->
+        <!--Bottom View Controller-->
         <scene sceneID="d4I-3o-zT8">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Dde-En-eHz" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Dde-En-eHz" customClass="BottomViewController" customModule="SwiftContainerViewExample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2An-i8-CC8"/>
                         <viewControllerLayoutGuide type="bottom" id="xrJ-sV-iSP"/>
