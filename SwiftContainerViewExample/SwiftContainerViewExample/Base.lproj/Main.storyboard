@@ -175,7 +175,57 @@
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Kyh-X9-O9D">
                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qPd-Rn-3kl">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fUH-Mj-ZVZ">
+                                    <size key="itemSize" width="90" height="112"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Eoz-Fr-bkm">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="112"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qPd-Rn-3kl" firstAttribute="top" secondItem="2An-i8-CC8" secondAttribute="bottom" id="DTZ-ku-NVf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qPd-Rn-3kl" secondAttribute="trailing" constant="-16" id="JGF-B0-mwa"/>
+                            <constraint firstItem="xrJ-sV-iSP" firstAttribute="top" secondItem="qPd-Rn-3kl" secondAttribute="bottom" id="i1X-oK-kWB"/>
+                            <constraint firstItem="qPd-Rn-3kl" firstAttribute="leading" secondItem="Kyh-X9-O9D" secondAttribute="leadingMargin" constant="-16" id="lXq-to-JkT"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="qPd-Rn-3kl"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="DTZ-ku-NVf"/>
+                                <exclude reference="JGF-B0-mwa"/>
+                                <exclude reference="lXq-to-JkT"/>
+                                <exclude reference="i1X-oK-kWB"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="qPd-Rn-3kl"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="DTZ-ku-NVf"/>
+                                <include reference="JGF-B0-mwa"/>
+                                <include reference="lXq-to-JkT"/>
+                                <include reference="i1X-oK-kWB"/>
+                            </mask>
+                        </variation>
                     </view>
                     <toolbarItems/>
                 </viewController>
