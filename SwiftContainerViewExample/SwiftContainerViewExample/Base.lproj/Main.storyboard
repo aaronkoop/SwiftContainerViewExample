@@ -145,6 +145,9 @@
                         </variation>
                     </view>
                     <toolbarItems/>
+                    <connections>
+                        <outlet property="tableView" destination="nxF-JK-0Br" id="Z7x-hb-2wE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KMh-wb-Eye" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
