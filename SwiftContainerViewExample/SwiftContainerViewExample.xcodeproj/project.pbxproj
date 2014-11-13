@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4189D2101A14970E00C641E8 /* BottomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4189D20F1A14970E00C641E8 /* BottomViewController.swift */; };
 		419409A81A1488140015076E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419409A71A1488140015076E /* AppDelegate.swift */; };
 		419409AA1A1488140015076E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419409A91A1488140015076E /* ViewController.swift */; };
 		419409AD1A1488140015076E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 419409AB1A1488140015076E /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4189D20F1A14970E00C641E8 /* BottomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomViewController.swift; sourceTree = "<group>"; };
 		419409A21A1488140015076E /* SwiftContainerViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftContainerViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		419409A61A1488140015076E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		419409A71A1488140015076E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				419409A71A1488140015076E /* AppDelegate.swift */,
 				419409A91A1488140015076E /* ViewController.swift */,
 				419409C91A1492530015076E /* TopViewController.swift */,
+				4189D20F1A14970E00C641E8 /* BottomViewController.swift */,
 				419409AB1A1488140015076E /* Main.storyboard */,
 				419409AE1A1488140015076E /* Images.xcassets */,
 				419409B01A1488140015076E /* LaunchScreen.xib */,
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				419409CA1A1492530015076E /* TopViewController.swift in Sources */,
+				4189D2101A14970E00C641E8 /* BottomViewController.swift in Sources */,
 				419409AA1A1488140015076E /* ViewController.swift in Sources */,
 				419409A81A1488140015076E /* AppDelegate.swift in Sources */,
 			);
