@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -71,12 +72,12 @@
                                 <exclude reference="j9S-wa-Joh"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="c2u-Bn-VTd"/>
                                 <exclude reference="IaX-PK-tUn"/>
                                 <exclude reference="QU5-7t-2he"/>
                                 <exclude reference="kUl-W0-PiB"/>
                                 <exclude reference="JdL-r4-4IS"/>
                                 <exclude reference="Nkn-4U-3gf"/>
-                                <exclude reference="c2u-Bn-VTd"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -85,12 +86,12 @@
                                 <include reference="j9S-wa-Joh"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="c2u-Bn-VTd"/>
                                 <include reference="IaX-PK-tUn"/>
                                 <include reference="QU5-7t-2he"/>
                                 <include reference="kUl-W0-PiB"/>
                                 <include reference="JdL-r4-4IS"/>
                                 <include reference="Nkn-4U-3gf"/>
-                                <include reference="c2u-Bn-VTd"/>
                             </mask>
                         </variation>
                     </view>
@@ -107,11 +108,21 @@
                         <viewControllerLayoutGuide type="bottom" id="lcr-1k-hjg"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Hlh-kt-G2Z">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="nxF-JK-0Br">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" id="DUl-E7-WUF">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DUl-E7-WUF" id="BBo-dL-3yd">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -126,10 +137,10 @@
                                 <exclude reference="nxF-JK-0Br"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="4Ai-DH-CFU"/>
                                 <exclude reference="8Iv-xa-B5D"/>
                                 <exclude reference="FVf-Ao-nA5"/>
                                 <exclude reference="RuX-c9-QbS"/>
-                                <exclude reference="4Ai-DH-CFU"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -137,10 +148,10 @@
                                 <include reference="nxF-JK-0Br"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="4Ai-DH-CFU"/>
                                 <include reference="8Iv-xa-B5D"/>
                                 <include reference="FVf-Ao-nA5"/>
                                 <include reference="RuX-c9-QbS"/>
-                                <include reference="4Ai-DH-CFU"/>
                             </mask>
                         </variation>
                     </view>
@@ -162,6 +173,7 @@
                         <viewControllerLayoutGuide type="bottom" id="xrJ-sV-iSP"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Kyh-X9-O9D">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
