@@ -13,6 +13,7 @@
 		419409AF1A1488140015076E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 419409AE1A1488140015076E /* Images.xcassets */; };
 		419409B21A1488140015076E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 419409B01A1488140015076E /* LaunchScreen.xib */; };
 		419409BE1A1488150015076E /* SwiftContainerViewExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419409BD1A1488150015076E /* SwiftContainerViewExampleTests.swift */; };
+		419409CA1A1492530015076E /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419409C91A1492530015076E /* TopViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		419409B71A1488140015076E /* SwiftContainerViewExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftContainerViewExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		419409BC1A1488140015076E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		419409BD1A1488150015076E /* SwiftContainerViewExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftContainerViewExampleTests.swift; sourceTree = "<group>"; };
+		419409C91A1492530015076E /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				419409AE1A1488140015076E /* Images.xcassets */,
 				419409B01A1488140015076E /* LaunchScreen.xib */,
 				419409A51A1488140015076E /* Supporting Files */,
+				419409C91A1492530015076E /* TopViewController.swift */,
 			);
 			path = SwiftContainerViewExample;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				419409CA1A1492530015076E /* TopViewController.swift in Sources */,
 				419409AA1A1488140015076E /* ViewController.swift in Sources */,
 				419409A81A1488140015076E /* AppDelegate.swift in Sources */,
 			);
@@ -407,6 +411,7 @@
 				419409C31A1488150015076E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		419409C41A1488150015076E /* Build configuration list for PBXNativeTarget "SwiftContainerViewExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +420,7 @@
 				419409C61A1488150015076E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
