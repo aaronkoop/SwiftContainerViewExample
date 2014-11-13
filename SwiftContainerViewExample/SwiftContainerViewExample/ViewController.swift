@@ -22,6 +22,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let viewController = segue.destinationViewController as? TopViewController {
+            topViewController = viewController
+        } else if let viewController = segue.destinationViewController as? BottomViewController {
+            bottomViewController = viewController
+        }
+        
+    }
 }
 
