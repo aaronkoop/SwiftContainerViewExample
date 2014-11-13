@@ -98,10 +98,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--Top View Controller-->
         <scene sceneID="EsC-ds-NRo">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="d5s-UY-tsC" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="d5s-UY-tsC" customClass="TopViewController" customModule="SwiftContainerViewExample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="a0R-K2-bMz"/>
                         <viewControllerLayoutGuide type="bottom" id="lcr-1k-hjg"/>
