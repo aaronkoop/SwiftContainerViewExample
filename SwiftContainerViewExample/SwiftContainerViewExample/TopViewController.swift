@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TopViewController: UIViewController {
+class TopViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     private var items = ["One", "Two", "Three"]
@@ -23,8 +23,17 @@ class TopViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items.count
+    }
+
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCellWithIdentifier("itemCell") as UITableViewCell
+        cell.textLabel.text = items[indexPath.row]
+        return cell
+    }
+    
     /*
     // MARK: - Navigation
 
