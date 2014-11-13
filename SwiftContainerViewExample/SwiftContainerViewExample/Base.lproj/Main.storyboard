@@ -228,6 +228,9 @@
                         </variation>
                     </view>
                     <toolbarItems/>
+                    <connections>
+                        <outlet property="collectionView" destination="qPd-Rn-3kl" id="98A-Rp-CiC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L8C-QG-3I2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
