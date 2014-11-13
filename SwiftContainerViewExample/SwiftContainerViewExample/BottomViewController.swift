@@ -8,9 +8,10 @@
 
 import UIKit
 
-class BottomViewController: UIViewController {
+class BottomViewController: UIViewController, UICollectionViewDataSource {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    private var items = ["One", "Two", "Three"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,14 @@ class BottomViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return items.count
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        var cell = collectionView.dequeueReusableCellWithReuseIdentifier("collectionView", forIndexPath: indexPath) as UICollectionViewCell
+        return cell
+    }
 
     /*
     // MARK: - Navigation
