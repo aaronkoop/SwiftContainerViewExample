@@ -11,10 +11,11 @@ import UIKit
 class TopViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    private var items = ["One", "Two", "Three"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 

@@ -81,11 +81,11 @@
 			children = (
 				419409A71A1488140015076E /* AppDelegate.swift */,
 				419409A91A1488140015076E /* ViewController.swift */,
+				419409C91A1492530015076E /* TopViewController.swift */,
 				419409AB1A1488140015076E /* Main.storyboard */,
 				419409AE1A1488140015076E /* Images.xcassets */,
 				419409B01A1488140015076E /* LaunchScreen.xib */,
 				419409A51A1488140015076E /* Supporting Files */,
-				419409C91A1492530015076E /* TopViewController.swift */,
 			);
 			path = SwiftContainerViewExample;
 			sourceTree = "<group>";
