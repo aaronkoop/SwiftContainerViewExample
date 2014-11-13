@@ -11,11 +11,11 @@ import UIKit
 class BottomViewController: UIViewController, UICollectionViewDataSource {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    private var items = ["One", "Two", "Three"]
+    private var items = ["One", "Two", "Three", "Four", "Five"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        collectionView.dataSource = self
         // Do any additional setup after loading the view.
     }
 
@@ -29,7 +29,7 @@ class BottomViewController: UIViewController, UICollectionViewDataSource {
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        var cell = collectionView.dequeueReusableCellWithReuseIdentifier("collectionView", forIndexPath: indexPath) as UICollectionViewCell
+        var cell = collectionView.dequeueReusableCellWithReuseIdentifier("collectionCell", forIndexPath: indexPath) as UICollectionViewCell
         return cell
     }
 
